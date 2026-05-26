@@ -13,6 +13,13 @@
       align-items: center;
       background: #f5f7fb;
     }
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+      padding: 40px;
+    }
     .frame {
       width: 300px;
       height: 154px;
@@ -20,16 +27,48 @@
       overflow: hidden;
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
       border-radius: 12px;
+      background: #fff;
+    }
+    .card {
+      display: grid;
+      gap: 12px;
+      padding: 16px;
+      border-radius: 18px;
+      background: #ffffffee;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+      text-align: center;
+      min-width: 320px;
+    }
+    .title {
+      margin: 0;
+      font-size: 1rem;
+      color: #111827;
+      letter-spacing: 0.02em;
     }
   </style>
 </head>
 <body>
-  <iframe
-    class="frame"
-    src="https://w2.countingdownto.com/7142964"
-    frameborder="0"
-    scrolling="no"
-    title="Countdown"
-  ></iframe>
+  <div class="container">
+    <div class="card">
+      <h2 class="title">Countdown 1</h2>
+      <iframe
+        class="frame"
+        src="https://w2.countingdownto.com/7142964"
+        frameborder="0"
+        scrolling="no"
+        title="Countdown 7142964"
+      ></iframe>
+    </div>
+    <div class="card">
+      <h2 class="title">Countdown 2</h2>
+      <iframe
+        class="frame"
+        src="https://countingdownto.com/?c=7142977"
+        frameborder="0"
+        scrolling="no"
+        title="Countdown 7142977"
+      ></iframe>
+    </div>
+  </div>
 </body>
 </html>
